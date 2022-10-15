@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 order-sm-1 order-1 order-md-2 pr-0 col-md-12" >
+            <div class="col-8 order-sm-1 order-1 order-md-2 pr-0" >
 {{--                <nav aria-label="Page navigation example">--}}
 {{--                    <ul class="pagination justify-content-center">--}}
 {{--                        <li class="page-item"><span>{{__('Pages')}}</span></li>--}}
