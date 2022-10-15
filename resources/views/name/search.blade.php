@@ -21,6 +21,6 @@
     </section>
     <!-- page title Part end -->
 
-
+    @include('name.partials.list')
 
 @endsection

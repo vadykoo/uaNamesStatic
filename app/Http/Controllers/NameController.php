@@ -69,9 +69,10 @@ class NameController extends Controller
         ]);
         return back()->with('status', 'Name Added Successfully!');
     }
-    function search()
+
+    public function search(Request $request)
     {
-      $search_string = $_GET['search_string'];
+      $search_string = $request->search_string;
       $names = Name::where('name', 'like' , "%".$search_string."%")->get();
       return view('name.search', compact('names'));
     }

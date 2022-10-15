@@ -17,7 +17,7 @@ Infinite Name
                               <div class="input-group">
                                 <input class="form-control aa" placeholder="Search your name" type="text" name="search_string">
                                 <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">Search</button>
+                                    <button class="btn btn-default" type="submit">{{__("Search")}}</button>
                                 </div>
                               </div>
                             </form>
