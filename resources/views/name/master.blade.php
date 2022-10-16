@@ -33,7 +33,7 @@
             </ul>
             <div class="login">
                 @if(!Auth::user())
-                    <a href="{{route('login')}}">Login/Register</a>
+{{--                    <a href="{{route('login')}}">Login/Register</a>--}}
                     @else
                     <a href="{{ route('logout') }}"
                        onclick="event.preventDefault();
@@ -57,76 +57,76 @@
 <!-- Navbar Part End -->
 @yield('content')
 <!-- Footer part start -->
-<section id="footer">
-    <div class="container d-none">
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-3 pl-0">
-                        <div class="footer-logo">
-                            <a href="#"><img src="{{asset('/')}}name/images/logo.png" alt="footer-logo" class="img-fluid"></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="footer-item">
-                            <div class="footer-heading">
-                                <h3>Important link</h3>
-                            </div>
-                            <div class="links">
-                                <a href="#">{{__("Boys Name")}}</a>
-                                <a href="#">> {{__("Girls Name")}}</a>
-                                <a href="#">Female Shahabi Name</a>
-                                <a href="#">male Shahabi Name</a>
-                                <a href="#">99 Names of Allah</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="footer-item">
-                            <div class="footer-heading">
-                                <h3>Important link</h3>
-                            </div>
-                            <div class="links">
-                                <a href="#">{{__("Boys Name")}}</a>
-                                <a href="#">> {{__("Girls Name")}}</a>
-                                <a href="#">Female Shahabi Name</a>
-                                <a href="#">male Shahabi Name</a>
-                                <a href="#">99 Names of Allah</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="footer-item">
-                            <div class="footer-heading">
-                                <h3>Recent blogs</h3>
-                            </div>
-                            <div class="links extra-class">
-                                <a href="#">Naming your new born Muslim Baby</a>
-                                <a href="#">Names of Prophet Mohammad saw</a>
-                                <a href="#">Female Sahabi Names</a>
-                                <a href="#">Muslim New Born</a>
-                                <a href="#">Male Sahabi Names</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="footer-item">
-                            <div class="footer-heading">
-                                <h3>my account</h3>
-                            </div>
-                            <div class="links extra-class">
-                                <a href="#">create account</a>
-                                <a href="#">login</a>
-                                <a href="#">contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section id="footer">--}}
+{{--    <div class="container d-none">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-12">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-3 pl-0">--}}
+{{--                        <div class="footer-logo">--}}
+{{--                            <a href="#"><img src="{{asset('/')}}name/images/logo.png" alt="footer-logo" class="img-fluid"></a>--}}
+{{--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-2">--}}
+{{--                        <div class="footer-item">--}}
+{{--                            <div class="footer-heading">--}}
+{{--                                <h3>Important link</h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="links">--}}
+{{--                                <a href="#">{{__("Boys Name")}}</a>--}}
+{{--                                <a href="#">> {{__("Girls Name")}}</a>--}}
+{{--                                <a href="#">Female Shahabi Name</a>--}}
+{{--                                <a href="#">male Shahabi Name</a>--}}
+{{--                                <a href="#">99 Names of Allah</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-2">--}}
+{{--                        <div class="footer-item">--}}
+{{--                            <div class="footer-heading">--}}
+{{--                                <h3>Important link</h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="links">--}}
+{{--                                <a href="#">{{__("Boys Name")}}</a>--}}
+{{--                                <a href="#">> {{__("Girls Name")}}</a>--}}
+{{--                                <a href="#">Female Shahabi Name</a>--}}
+{{--                                <a href="#">male Shahabi Name</a>--}}
+{{--                                <a href="#">99 Names of Allah</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-3">--}}
+{{--                        <div class="footer-item">--}}
+{{--                            <div class="footer-heading">--}}
+{{--                                <h3>Recent blogs</h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="links extra-class">--}}
+{{--                                <a href="#">Naming your new born Muslim Baby</a>--}}
+{{--                                <a href="#">Names of Prophet Mohammad saw</a>--}}
+{{--                                <a href="#">Female Sahabi Names</a>--}}
+{{--                                <a href="#">Muslim New Born</a>--}}
+{{--                                <a href="#">Male Sahabi Names</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-2">--}}
+{{--                        <div class="footer-item">--}}
+{{--                            <div class="footer-heading">--}}
+{{--                                <h3>my account</h3>--}}
+{{--                            </div>--}}
+{{--                            <div class="links extra-class">--}}
+{{--                                <a href="#">create account</a>--}}
+{{--                                <a href="#">login</a>--}}
+{{--                                <a href="#">contact us</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 <!-- Footer part end -->
 
 <!-- Footer bottom part start -->

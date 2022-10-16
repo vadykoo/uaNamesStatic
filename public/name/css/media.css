@@ -2,10 +2,10 @@
 @media (min-width: 768px) and (max-width: 991px) {
 .navbar .form-control {
 	padding: .5rem 0.25rem;
-}    
+}
 .login a, .navbar-light .navbar-nav .nav-link {
 	font-size: 18px;
-}    
+}
 .login {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -19,10 +19,10 @@
 }
 .search-name .btn {
 	padding: 1.5px 20px;
-}    
+}
 .names-by-letter {
     text-align: center;
-}    
+}
 .names-by-letter span {
 	display: block;
 	text-align: center;
@@ -73,9 +73,9 @@
 .reply img {
     margin: 0 auto;
 }
-.all-comments h3 {  
+.all-comments h3 {
 	padding-top: 10px;
-}    
+}
 }
 
 /*========================== large device ========================*/
@@ -87,8 +87,8 @@
 	font-size: 22px;
 }
 #alpha-search {
-	 padding-top: 0px; 
-}    
+	 padding-top: 0px;
+}
 }
 /*=============== media 767 only ================*/
 @media (width:767px){
@@ -101,7 +101,7 @@
 @media (max-width: 767px) {
 .navbar-nav {
     padding-top: 10px
-}    
+}
 .login {
 	margin-left: 0;
 	margin-right: 0;
@@ -140,7 +140,7 @@
 	max-width: 100%;
     text-align: center;
 }
-.names-by-letter span { 
+.names-by-letter span {
 	display: block;
 	text-align: center;
 	padding-bottom: 20px;
@@ -157,7 +157,7 @@
 #name-blog .left-item img {
     width: 100%;
 }
-.overlay img { 
+.overlay img {
 	left: 0px;
 }
 #name-blog .left-top {
@@ -188,7 +188,7 @@
     -ms-flex: 0 0 100%;
 	flex: 0 0 100%;
 	max-width: 100%;
-}    
+}
 #footer .col-2 {
     -ms-flex: 0 0 100%;
 	flex: 0 0 100%;
@@ -243,7 +243,7 @@
 	-ms-flex: 0 0 100%;
 	flex: 0 0 100%;
 	max-width: 100%;
-}    
+}
 .all-comments span {
 	color: #777777;
 	float: none;
@@ -257,7 +257,7 @@
 }
 .lb-header a {
 	padding: 0 40px;
-}    
+}
 }
 /*=============== media 320px ================*/
 @media (width:320px) {
@@ -266,7 +266,7 @@
 }
 .search-name .btn {
 	padding: 1.5px 10px;
-}    
+}
 .blog-item h3 {
 	font-size: 24px;
 }
@@ -295,7 +295,7 @@
 }
 .name-details td {
 	font-size: 14px;
-}    
+}
 .name-details th {
 	font-size: 16px;
 }
@@ -313,7 +313,7 @@
 }
 .blog-details-page .blog-details b span {
 	padding-left: 5px;
-}    
+}
 }
 /*=============== media 480px ================*/
 @media (width:480px){
@@ -345,8 +345,8 @@
 }
 .name-details th {
 	font-size: 18px;
-}    
+}
 .name-details td {
 	font-size: 15px;
-}    
-}    
+}
+}

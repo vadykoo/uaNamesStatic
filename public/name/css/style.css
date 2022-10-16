@@ -120,7 +120,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-} 
+}
 .search-name ::placeholder {
   color: #fff;
 }
@@ -732,7 +732,7 @@ body {
     color: #222222;
     padding-top: 20px;
     padding-bottom: 10px;
-    
+
 }
 /*====================== Login =====================*/
 .login-box{
@@ -824,7 +824,7 @@ body {
   padding: 0 10px;
   border-radius: 2px;
   color: #333;
-  font-family: 'Open Sans', sans-serif;    
+  font-family: 'Open Sans', sans-serif;
   font-size:14px;
   -webkit-transition:all 0.1s linear;
   -moz-transition:all 0.1s linear;
@@ -843,7 +843,7 @@ body {
   font-weight: normal;
   padding: 14px 0;
   border-radius: 2px;
-  font-family: 'Dosis', sans-serif;    
+  font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
 }
 .forgot-password{
