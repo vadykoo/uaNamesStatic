@@ -19,7 +19,8 @@ class CreateFamousNamesTable extends Migration
             $table->string('last_name')->nullable();
             $table->string('link')->nullable();
             $table->string('img')->nullable();
-            $table->string('description')->nullable();
+            $table->string('status')->nullable();
+            $table->text('description')->nullable();
             $table->unsignedInteger('name_id')->nullable();
 
             $table->foreign('name_id')->references('id')->on('names');

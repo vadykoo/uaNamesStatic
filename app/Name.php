@@ -9,4 +9,10 @@ class Name extends Model
 {
     use SoftDeletes;
     protected $dates = ['deleted_at'];
+    protected $fillable = ['name','gender'];
+
+    public function famousPeoples()
+    {
+        return $this->hasMany(FamousNames::class);
+    }
 }

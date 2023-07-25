@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\FamousNames;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Carbon\Carbon;
@@ -9,7 +10,8 @@ use App\Name;
 
 class NameController extends Controller
 {
-    public function index () {
+    public function index()
+    {
 
 
         $letters = Name::selectRaw('substr(name,1,1) as first')->pluck('first')->unique()->toArray();
@@ -26,54 +28,67 @@ class NameController extends Controller
         return view('name.home.home')->with(['boy_letters' => $letters, 'girl_letters' => $letters]);
     }
 
-    public function boys () {
-        $names = Name::where('gender', 1)->orderBy('name', 'asc')->get();
-        return view('name.boys.boys', compact('names'));
+    public function boysalphabate($alphabate)
+    {
+        $names = Name::where('gender', 1)->where('name', 'like', $alphabate . "%")->get();
+        $famousPeoples = FamousNames::whereIn('name_id', $names->pluck('id'))->get();
+        return view('name.boys.boys', compact('names', 'famousPeoples'));
     }
-    public function boysalphabate ($alphabate) {
-        $names = Name::where('gender', 1)->where('name', 'like' , $alphabate."%")->get();
-        return view('name.boys.boys', compact('names'));
-    }
-    public function girlsalphabate ($alphabate) {
-        $names = Name::where('gender', 2)->where('name', 'like' , $alphabate."%")->get();
+
+    public function girlsalphabate($alphabate)
+    {
+        $names = Name::where('gender', 2)->where('name', 'like', $alphabate . "%")->with('famousPeoples')->get();
         return view('name.girls.girls', compact('names'));
     }
-    public function girls () {
+
+    public function girls()
+    {
         $names = Name::where('gender', 2)->orderBy('name', 'asc')->get();
         return view('name.girls.girls', compact('names'));
     }
 
-    public function login () {
+    public function boys()
+    {
+        $names = Name::where('gender', 1)->orderBy('name', 'asc')->get();
+        return view('name.boys.boys', compact('names'));
+    }
+
+    public function login()
+    {
         return view('name.login.login');
     }
 
-    public function namedetails ($slug) {
-        $name = Name::where('slug', $slug)->first();
+    public function namedetails($slug)
+    {
+        $name = Name::where('slug', $slug)->with('famousPeoples')->first();
         return view('name.namedetails.namedetails', compact('name'));
     }
 
-    public function nameview(){
+    public function nameview()
+    {
         return view('name.backend.nameinsertview');
     }
-    public function nameinsert(Request $request){
-      $request->validate([
-        'name' => 'unique:names,name'
-      ]);
+
+    public function nameinsert(Request $request)
+    {
+        $request->validate([
+            'name' => 'unique:names,name'
+        ]);
         Name::insert([
-          "name" => $request->name,
-          "gender" => $request->gender,
-          "origin" => $request->origin,
-          "english_meaning" => $request->english_meaning,
-          "ukrainian_meaning" => $request->ukrainian_meaning,
-          "created_at" => Carbon::now()
+            "name" => $request->name,
+            "gender" => $request->gender,
+            "origin" => $request->origin,
+            "english_meaning" => $request->english_meaning,
+            "ukrainian_meaning" => $request->ukrainian_meaning,
+            "created_at" => Carbon::now()
         ]);
         return back()->with('status', 'Name Added Successfully!');
     }
 
     public function search(Request $request)
     {
-      $search_string = $request->search_string;
-      $names = Name::where('name', 'like' , "%".$search_string."%")->get();
-      return view('name.search', compact('names'));
+        $search_string = $request->search_string;
+        $names = Name::where('name', 'like', "%" . $search_string . "%")->get();
+        return view('name.search', compact('names'));
     }
 }

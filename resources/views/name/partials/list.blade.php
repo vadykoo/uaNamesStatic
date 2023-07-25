@@ -4,19 +4,32 @@
         <div class="row">
             <div class="col-4 pl-0 order-sm-2 order-2 order-md-1">
                 <div class="left-item">
-                    <div class="left-top-one">
-                        <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeneralStaff.ua&tabs=timeline&width=365&height=310&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="365" height="310" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowTransparency="true"></iframe>
-                    </div>
-                    <div class="left-top tahsan-class-2">
-                        <img src="{{asset('/')}}name/images/img1.png" alt="img1" class="img-fluid">
-                        <div class="overlay">
-                            <a href="#"><img src="{{asset('/')}}name/images/shape-border.png" alt="border"
-                                             class="img-fluid"></a>
+                    @if (isset($famousPeoples) and $famousPeoples->count() > 3)
+
+                    <div class="famous-people card">
+                        <div class="card-body">
+                            @foreach($famousPeoples as $famous)
+                            <div class="left-bottom">
+                                    <img src="{{$famous->img}}" alt="expericnce" class="img-fluid">
+                                    <a href="{{$famous->link}}">{{$famous->name. ' ' . $famous->last_name}}<p>Read More</p> <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
+                    @endif
+                        <div class="left-top-one">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeneralStaff.ua&tabs=timeline&width=365&height=310&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="365" height="310" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                                allowTransparency="true"></iframe>
+                        </div>
+                        <div class="left-top tahsan-class-2">
+                            <img src="{{asset('/')}}name/images/img1.png" alt="img1" class="img-fluid">
+                            <div class="overlay">
+                                <a href="#"><img src="{{asset('/')}}name/images/shape-border.png" alt="border"
+                                                 class="img-fluid"></a>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div class="col-8 order-sm-1 order-1 order-md-2 pr-0" >
@@ -52,6 +65,7 @@
                         </thead>
                         <tbody>
                         @forelse($names as $name)
+{{--                            @dd($name->famousPeoples);--}}
                             <tr>
                                 <td class="name-class"><a
                                         href="{{route('namedetails', $name->slug)}}">{{ $name->name }}</a></td>

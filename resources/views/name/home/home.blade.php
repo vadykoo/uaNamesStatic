@@ -64,128 +64,62 @@ Infinite Name
     </section>
     <!-- Alphabitacally Search end -->
 
-    <!-- Name blogs start -->
-{{--    <section id="name-blog">--}}
-{{--        <div class="container d-none">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-4 pl-0">--}}
-{{--                    <div class="left-item">--}}
-{{--                        <div class="left-top">--}}
-{{--                            <img src="{{asset('/')}}name/images/img1.png" alt="img1" class="img-fluid">--}}
-{{--                            <div class="overlay">--}}
-{{--                                <a href="#"><img src="{{asset('/')}}name/images/shape-border.png" alt="border" class="img-fluid"></a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="left-bottom">--}}
-{{--                            <img src="{{asset('/')}}name/images/experince.jpg" alt="expericnce" class="img-fluid">--}}
-{{--                            <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-8">--}}
-{{--                    <div class="row">--}}
-{{--                        <div class="col-12">--}}
-{{--                            <div class="row">--}}
-{{--                                <div class="col-6 pr-0">--}}
-{{--                                    <div class="blog-item">--}}
-{{--                                        <div class="blog-img">--}}
-{{--                                            <img src="{{asset('/')}}name/images/blog1.png" alt="blog1" class="img-fluid">--}}
-{{--                                            <div class="overlay2">--}}
-{{--                                                <a href="#"><i class="fa fa-link"></i></a>--}}
-{{--                                                <a href="#"><i class="fa fa-share-alt"></i></a>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="commnets-like">--}}
-{{--                                            <a href="#"><i class="fa fa-user"></i> Post by: Admin</a>--}}
-{{--                                            <span>--}}
-{{--                                            <a href="#"><i class="fa fa-eye"></i> 2.3k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-thumbs-o-up"></i> 1.8k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-comments"></i> 1.3k</a>--}}
-{{--                                        </span>--}}
-{{--                                        </div>--}}
-{{--                                        <h3>Aqeeqah For New Born Muslim</h3>--}}
-{{--                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>--}}
-{{--                                        <a class="read" href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i> </a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 pr-0">--}}
-{{--                                    <div class="blog-item">--}}
-{{--                                        <div class="blog-img">--}}
-{{--                                            <img src="{{asset('/')}}name/images/blog2.png" alt="blog1" class="img-fluid">--}}
-{{--                                            <div class="overlay2">--}}
-{{--                                                <a href="#"><i class="fa fa-link"></i></a>--}}
-{{--                                                <a href="#"><i class="fa fa-share-alt"></i></a>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="commnets-like">--}}
-{{--                                            <a href="#"><i class="fa fa-user"></i> Post by: Admin</a>--}}
-{{--                                            <span>--}}
-{{--                                            <a href="#"><i class="fa fa-eye"></i> 2.3k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-thumbs-o-up"></i> 1.8k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-comments"></i> 1.3k</a>--}}
-{{--                                        </span>--}}
-{{--                                        </div>--}}
-{{--                                        <h3>Teaching Islam to our Children</h3>--}}
-{{--                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>--}}
-{{--                                        <a class="read" href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i> </a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 pr-0">--}}
-{{--                                    <div class="blog-item">--}}
-{{--                                        <div class="blog-img">--}}
-{{--                                            <img src="{{asset('/')}}name/images/blog3.png" alt="blog1" class="img-fluid">--}}
-{{--                                            <div class="overlay2">--}}
-{{--                                                <a href="#"><i class="fa fa-link"></i></a>--}}
-{{--                                                <a href="#"><i class="fa fa-share-alt"></i></a>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="commnets-like">--}}
-{{--                                            <a href="#"><i class="fa fa-user"></i> Post by: Admin</a>--}}
-{{--                                            <span>--}}
-{{--                                            <a href="#"><i class="fa fa-eye"></i> 2.3k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-thumbs-o-up"></i> 1.8k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-comments"></i> 1.3k</a>--}}
-{{--                                        </span>--}}
-{{--                                        </div>--}}
-{{--                                        <h3>Shaving the head For Newborn</h3>--}}
-{{--                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>--}}
-{{--                                        <a class="read" href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i> </a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="col-6 pr-0">--}}
-{{--                                    <div class="blog-item">--}}
-{{--                                        <div class="blog-img">--}}
-{{--                                            <img src="{{asset('/')}}name/images/blog4.png" alt="blog1" class="img-fluid">--}}
-{{--                                            <div class="overlay2">--}}
-{{--                                                <a href="#"><i class="fa fa-link"></i></a>--}}
-{{--                                                <a href="#"><i class="fa fa-share-alt"></i></a>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="commnets-like">--}}
-{{--                                            <a href="#"><i class="fa fa-user"></i> Post by: Admin</a>--}}
-{{--                                            <span>--}}
-{{--                                            <a href="#"><i class="fa fa-eye"></i> 2.3k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-thumbs-o-up"></i> 1.8k</a>--}}
-{{--                                            <a href="#"><i class="fa fa-comments"></i> 1.3k</a>--}}
-{{--                                        </span>--}}
-{{--                                        </div>--}}
-{{--                                        <h3>Aqeeqah For New Born Muslim</h3>--}}
-{{--                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>--}}
-{{--                                        <a class="read" href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i> </a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="row">--}}
-{{--                <div class="succes-banner">--}}
-{{--                    <img src="{{asset('/')}}name/images/success.jpg" alt="success" class="img-fluid">--}}
-{{--                    <a href="#">Join Now</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
-    <!-- Name blogs end -->
-@endsection
+
+        <!-- Random Names Popup Start -->
+        <section id="random-names-popup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="random-names-content text-center" style="background-color: #ffffff; padding: 20px; border-radius: 10px;">
+                            <h3 style="color: #333;">{{ __("messages.random_names") }}</h3>
+                            <div class="random-names">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4 style="color: #007bff;">{{ __("messages.random_boy_name") }}</h4>
+                                        <p id="random-boy-name"></p>
+                                        <button class="btn btn-primary" onclick="showRandomBoyName()" style="background-color: #007bff; border-color: #007bff;">{{ __("messages.show_random_boy_name") }}</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 style="color: #ff6b6b;">{{ __("messages.random_girl_name") }}</h4>
+                                        <p id="random-girl-name"></p>
+                                        <button class="btn btn-primary" onclick="showRandomGirlName()" style="background-color: #ff6b6b; border-color: #ff6b6b;">{{ __("messages.show_random_girl_name") }}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Random Names Popup End -->
+
+        <script>
+            function showRandomBoyName() {
+                fetchRandomName('boy');
+            }
+
+            function showRandomGirlName() {
+                fetchRandomName('girl');
+            }
+
+            function fetchRandomName(gender) {
+                // Call an API endpoint to get a random name based on gender
+                fetch(`/api/random-name/${gender}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Update the content of the popup with the fetched name
+                        if (gender === 'boy') {
+                            document.getElementById('random-boy-name').textContent = data.name;
+                        } else if (gender === 'girl') {
+                            document.getElementById('random-girl-name').textContent = data.name;
+                        }
+
+                        // Show the popup
+                        $('#random-names-popup').modal('show');
+                    })
+                    .catch(error => {
+                        console.error('Error fetching random name:', error);
+                    });
+            }
+        </script>
+    @endsection

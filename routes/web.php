@@ -36,3 +36,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Insert Name
 Route::get('/name/view', 'NameController@nameview');
 Route::post('/name/insert', 'NameController@nameinsert');
+
+Route::get('/api/random-name/{gender}', 'RandomNameController@show');

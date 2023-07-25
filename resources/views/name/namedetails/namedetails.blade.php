@@ -27,9 +27,17 @@
                                 <a href="#"><img src="{{asset('/')}}name/images/shape-border.png" alt="border" class="img-fluid"></a>
                             </div>
                         </div>
-                        <div class="left-bottom">
-                            <img src="{{asset('/')}}name/images/experince.jpg" alt="expericnce" class="img-fluid">
-                            <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        <div class="famous-people mt-3">
+                            <div class="row">
+                                @foreach($name->famousPeoples as $famous)
+                                    <div class="col-6 mb-4">
+                                        <a href="{{ $famous->link }}">
+                                            <img src="{{ $famous->img }}" alt="experience" class="img-fluid">
+                                            <h4 class="mt-3">{{ $famous->name . ' ' . $famous->last_name }}</h4>
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,6 +49,7 @@
                                     <h3>{{ $name->name }}</h3>
                                 </div>
                             </div>
+
                             <div class="name-text">
                                 <div class="col-12">
                                     <div class="row details-name">
