@@ -3,11 +3,6 @@
 namespace App\Jobs;
 
 use App\FamousNames;
-use App\Models\Area;
-use App\Models\Delivery;
-use App\Models\DeliveryMethod;
-use App\Models\DeliveryPostcode;
-use App\Models\Warehouse;
 use App\Name;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -15,11 +10,9 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use League\Csv\Reader;
-use Illuminate\Support\Facades\Storage;
 
 /*
  * Working for update prices with a table when all postcodes already exist in db
- * https://docs.google.com/spreadsheets/d/1ZLJCxs_TYdgtMK4_6Y-gmNX0ASW5DxrABJomljP4jq8/edit#gid=1157870643
  */
 
 class ImportFocusNames implements ShouldQueue
