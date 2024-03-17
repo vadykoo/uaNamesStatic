@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://namely.com.ua/sitemap.xml
